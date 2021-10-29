@@ -1,0 +1,89 @@
+body {
+    font-family: 'PT Sans' , Now, sans-serif;
+    background-image: linear-gradient(rgba(115, 128, 119, 0.8), rgba(115, 128, 119, 0.8)),
+url("../images/background.jpg");
+    background-size: cover;
+    background-blend-mode: color;
+    background-position: center;
+}
+
+.flex {
+    display: flex;
+}
+
+header{
+    width: 100%;
+    justify-content: space-between;
+}
+
+#hamnav {
+    background: none;
+}
+
+#hamitems { 
+    display: flex;
+}
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+#hamitems a:hover { background:none; }
+#hamnav label, #hamburger { display: none; }
+
+.logo {
+    width: 90px;
+    margin-left: 15px;
+}
+
+h1 {
+    font-family: 'PT Sans' , Now, sans-serif;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    header {
+        flex-direction: row-reverse;
+    }
+    
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      border-top: 1px solid #333;
+    }
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: block; 
+      color: #000;
+      background: none;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { 
+        display: block; 
+        position:absolute;
+        background-color: #fff;
+
+    }
+
+    .logo {
+        right: 40%;
+        position: absolute;
+    }
+}
