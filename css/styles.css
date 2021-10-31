@@ -5,6 +5,15 @@ url("../images/background.jpg");
     background-size: cover;
     background-blend-mode: color;
     background-position: center;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+}
+
+.logo {
+    max-width: 180px;
 }
 
 .flex {
@@ -14,6 +23,9 @@ url("../images/background.jpg");
 header{
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 #hamnav {
@@ -33,21 +45,54 @@ header{
 }
 
 #hamitems a:hover { background:none; }
-#hamnav label, #hamburger { display: none; }
-
-.logo {
-    width: 90px;
-    margin-left: 15px;
+#hamnav label, #hamburger { display: none; 
 }
 
 h1 {
     font-family: 'PT Sans' , Now, sans-serif;
+    font-size: 50px;
+    color: #000;
+    padding: 0px 0px 20px 300px
+}
+
+h2 {
+    font-family: 'PT Sans' , Now, sans-serif;
+    font-size: 25px;
+    color: #fff;
+    padding-left: 300px;
 }
 
 nav a {
     color: #000;
     text-decoration: none;
     padding: 10px;
+}
+
+.boxes {
+    max-width: 100%;
+    height: 300px;
+}
+
+.boxone {
+    flex: 2;
+    background-image: radial-gradient(rgba(000, 000, 00019, 0.5), rgba(000, 000, 000, 0.25));
+    flex-direction: column-reverse;
+}
+
+.boxtwo {
+    flex: 1;
+    background-image: radial-gradient(rgba(128, 108, 127, 0.25), rgba(128, 108, 127, 0.6));
+}
+
+.jakker {
+    max-width: 250px;
+}
+
+.cta {
+    font-family: 'PT sans';
+    text-decoration: none;
+    color: #806C7F;
+    background-color: #fff;
 }
 
 /* [ON SMALL SCREENS] */
@@ -80,10 +125,5 @@ nav a {
         position:absolute;
         background-color: #fff;
 
-    }
-
-    .logo {
-        right: 40%;
-        position: absolute;
     }
 }
