@@ -126,4 +126,8 @@ nav a {
         background-color: #fff;
 
     }
+
+    .boxes {
+        flex-direction: column;
+    }
 }
