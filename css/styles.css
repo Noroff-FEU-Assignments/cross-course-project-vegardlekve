@@ -48,18 +48,42 @@ header{
     text-align: center;
 }
 
-#hamitems a:hover { background:none; }
+#hamitems a:hover { 
+    background:none;
+    text-decoration: overline;
+}
 #hamnav label, #hamburger { display: none; 
+}
+
+.logoline {
+    max-width: 400px;
 }
 
 h1 {
     font-size: 50px;
     color: #000;
+    text-shadow: #fff;
+    
 }
 
 h2 {
     font-size: 25px;
     color: #fff;
+}
+
+#shadowtext {
+    text-shadow: 0.5px 0.5px 20px #ffffff;
+    order: 2;
+    margin: 0;
+}
+
+#favorite {
+    order: 1;
+    margin: 0;
+}
+
+.boxone .cta {
+    order: 3;
 }
 
 nav a {
@@ -69,15 +93,17 @@ nav a {
 }
 
 .boxes {
+    margin-top: 2em;
     max-width: 100%;
-    height: 300px;
+    min-height: 25em;
 }
 
 .boxone {
     flex: 2;
     background-image: linear-gradient(90deg, rgba(000, 000, 00019, 0.5), rgba(000, 000, 000, 0.25));
-    flex-direction: column-reverse;
-    height: 22em;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .boxtwo {
@@ -85,7 +111,6 @@ nav a {
     background-image: linear-gradient(45deg, rgba(128, 108, 127, 0.25), rgba(128, 108, 127, 0.6));
     justify-content:space-evenly;
     align-items: center;
-    height: 22em;
 }
 
 .jakker {
@@ -99,8 +124,8 @@ nav a {
 
 .cta {
     text-decoration: none;
-    font-size:xx-large;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: bolder;
     color: #806C7F;
     background-color: #fff;
     padding: 10px 30px 10px 30px;
@@ -111,15 +136,25 @@ nav a {
 /* ABOUT */
 
 .about {
+    flex-direction: column;
+    align-content: center;
+}
+
+.about-box {
+    display: flex;
+    min-height: 18em;
+    width: 60%;
     background: rgba(255, 255, 255, 0.75);
     padding: 10px;
-    margin: 1.6em;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.25);
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+    align-self: center;
 }
 
 .about-h1 {
-    margin-left: 1.6em;
-    
+    align-self: center;
 }
 
 .about h2 {
@@ -129,26 +164,332 @@ nav a {
 /* CONTACT */
 
 .contact {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-box {
+    display: flex;
+    min-height: 18em;
+    width: 60%;
     background: rgba(255, 255, 255, 0.75);
     padding: 10px;
-    height: 15em;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.25);
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
 }
+
+.contact-box img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.contact p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.contact-h1 {
+    align-self: center;
+}
+
+.phone, .email, .adress {
+    display: flex;
+    align-items: center;
+}
+
+.phone-icon, .email-icon, .adress-icon {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.so-me {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.twitter {
+    margin: 0px 20px;
+}
+
+.instagram {
+    margin-right: 20px;
+}
+
 
 /* SHOP */
 
+.shop img {
+    width: 100%;
 
+}
+
+.shop h1 {
+    margin: 0;
+}
+
+.shop-jakke {
+    width: 200px;
+}
+
+.shop .cta {
+    max-height  : 30px;
+}
+
+.shopbox {
+    background-image: linear-gradient(90deg, rgba(000, 000, 00019, 0.5), rgba(000, 000, 000, 0.25));
+    width: 100%;
+}
+
+.shop-text {
+    flex-direction: column;
+    flex: 1;
+}
+
+.shop-jakker {
+    background: rgba(255, 255, 255, 0.75);
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    min-width: 180px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.25);
+}
+
+.our, .collection {
+    flex: 1;
+}
+
+.product {
+    justify-content: space-between;
+    flex: 3;
+}
+
+.our {
+    align-items: flex-end;
+    background-image: linear-gradient(rgba(128, 108, 127, 0.5), rgba(128, 108, 127, 0.6));
+}
+
+.our h1 {
+    color:#fff;
+}
+
+.collection {
+    align-items: flex-start;
+}
 
 /* JACKET */
 
+.jacket {
+    justify-content: center;
+}
 
+.jacket-box {
+    display: flex;
+    min-height: 18em;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.25);
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+.jacket h1 {
+    margin: 0;
+}
+
+.jacket-box h2 {
+    color: #000;
+    margin: 0;
+}
+
+.jacket-box p {
+    padding-left: 60px;
+}
+
+.jacket-box .jakke4 {
+    width: 100%;
+}
+
+.jacket-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jacket .cta {
+    max-width: 125px;
+}
 
 /* CHECKOUT */
 
+.checkout {
+    margin-top: 40px;
+}
 
+.paybox-one {
+    display: flex;
+    flex-direction: column;
+    min-height: 18em;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.25);
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+.paybox-two {
+    display: flex;
+    min-height: 18em;
+    width: 60%;
+    background: rgba(219, 219, 219, 0.938);
+    padding: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    min-width: 300px;
+    flex-direction: column;
+}
+
+.infoform {
+    flex-direction: column;
+    text-align: center;
+}
+
+.payform {
+    flex-direction: column;
+    text-align: center;
+}
+
+.check-jakke {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 180px;
+}
 
 /* COMPLETE */
 
+#submit, .added {
+    display: none;
+  }
+
+.added .cta-button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgba(219, 219, 219, 0.938);
+  }
+  
+  .added .cta-button:hover{
+    border: 2px solid #FBFBFB;
+  }
+  
+  #submit:checked ~ .added {
+    display: flex;
+    color: #FBFBFB;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: #806C7F;
+    font-size: 30px;
+    border-radius: 5px;
+    position: absolute;
+    height: auto;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.25);
+    text-align: center;
+    transform: translate(-50%, 3%);
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 260px;
+  }
+
+  .cta-button {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #806C7F;
+    background-color: #fff;
+    padding: 10px 30px 10px 30px;
+    border-radius: 4%;   
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.25);
+    margin: 20px;
+  }
+
 /* [ON SMALL SCREENS] */
+
+@media screen and (max-width: 992px){
+
+/* SHOP */
+
+.shop {
+    justify-content: center;
+}
+
+.shopbox {
+    margin-top: 40px;
+    flex-direction: column;
+    background: none;
+    max-width: 600px;
+    align-self: center;
+}
+
+.product {
+    flex-direction: column;
+    align-items: center;
+}
+
+.our, .collection {
+    justify-content: center;
+    padding: 30px;
+}
+
+.collection {
+    background:rgba(000, 000, 000, 0.25)
+}
+
+.shop-jakker {
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+/* JACKET */
+
+    .jacket-box {
+        flex-direction: column;
+        margin-top: 40px;
+        align-items: center;
+    }
+
+    .jacket-box img {
+        max-width: 228px;
+        max-height: 258px;
+    }
+
+    .jacket-text {
+        align-items: center;
+    }
+    
+    .jacket-box p {
+        padding-left: 0;
+    }
+
+    .radio {
+        margin: 15px;
+    }
+
+/* CHECKOUT */
+    .checkout {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 768px){
     /* (A) BREAK INTO VERTICAL MENU */
 
@@ -165,6 +506,10 @@ nav a {
       margin-top: 10px;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    .logoline {
+        display: none;
     }
     
     #hamitems a {
@@ -192,12 +537,26 @@ nav a {
 
     }
 
+    #shadowtext {
+        margin: 0;
+    }
+
+    #favorite {
+        margin: 0;
+    }
+
     .boxes {
         flex-direction: column;
         margin-top: 40px;
     }
 
+    .boxone {
+        align-items: center;
+        min-height: 400px;
+    }
+
     .boxtwo {
         flex-direction: column;
+        align-items: center;
     }
 }

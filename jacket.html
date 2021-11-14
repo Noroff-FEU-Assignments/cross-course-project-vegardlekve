@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name ="description" content="Durable jackets for the whole family, to affordable prices from Rainydays">
-    <title>Rainy Days | Home</title>
+    <meta name ="description" content="Rainydays jacket for men">
+    <title>Rainy Days | RD Male</title>
     <link href="css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,25 +31,31 @@
         <img src="images/logostrek.png" alt="styling line" class="logoline">
       </nav>
     </header>
-    <main>
-      <section class="boxes flex">
-        <div class="boxone flex">
-          <h1 id="shadowtext">Check out our new arrivals!</h1>
-          <h2 id="favorite">Find your favorite</h2>
-          <a href="shop.html" class="cta">Explore</a>
-        </div>
-        <div class="boxtwo flex">
-          <div>
-            <img src="images/jakke4.png" alt="Male jacket" class="jakke4 jakker">
-          </div>
-          <div>
-            <img src="images/jakke3.png" alt="Female jacket" class="jakke3 jakker">
-          </div>
-          <div>
-            <img src="images/jakke2.png" alt="Junior jacket" class="jakke2 jakker">
-          </div>
-        </div>
-      </section>
+    <main class="jacket flex">
+      <section class="jacket-box flex">
+        <img src="images/jakke4.png" alt="Male jacket" class="jakke4">
+        <div class="jacket-text">
+          <h1>RD Male</h1>
+          <h2>100 €</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <section class="radio flex">  
+            <div>
+              <input type="radio" id="small" name="size" value="small"/>
+              <label for="size">Small</label>
+            </div>
+            <div>
+              <input type="radio" id="medium" name="size" value="medium"/>
+              <label for="size">Medium</label>
+            </div>
+            <div>
+              <input type="radio" id="large" name="size" value="large"/>
+              <label for="size">Large</label>
+            </div>
+            <div>
+              <input type="radio" id="xl" name="size" value="xl"/>
+              <label for="size">XL</label> 
+            </div>
+          </section>
+          <a href="checkout.html" class="cta">ADD TO CART</a>
+      </div>
     </main>
-  </body>
-</html>
